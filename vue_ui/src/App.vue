@@ -1,15 +1,26 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div id="app" class="container">
+    <!-- <div id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
+    <Header/>
     <router-view/>
   </div>
 </template>
+<script>
+// @ is an alias to /src
+import Header from '@/components/Header.vue'
 
+export default {
+  name: 'MyApp',
+  components: {
+    Header
+  }
+}
+</script>
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +39,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
