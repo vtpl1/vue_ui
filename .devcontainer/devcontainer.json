@@ -23,7 +23,8 @@
 		"esbenp.prettier-vscode",
 		"xabikos.javascriptsnippets",
 		"pranaygp.vscode-css-peek",
-		"formulahendry.auto-close-tag"
+		"formulahendry.auto-close-tag",
+		"wmaurer.change-case"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <p>Home tab</p>
+    <p>Home tab: {{ message }}</p>
     <AnalyticApps></AnalyticApps>
+    <p></p>
   </div>
 </template>
 
@@ -14,6 +15,14 @@ export default {
   name: "Home",
   components: {
     AnalyticApps,
+  },
+  data() {
+    return {
+      message: "Hello Vue!",
+    };
+  },
+  mounted() {
+    this.app = this.$store.getters.getCurrentApp;
   },
 };
 </script>
